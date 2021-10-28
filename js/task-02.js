@@ -13,7 +13,10 @@ const arr = ingredients.map(ingredient => {
   li.classList.add("item");
   return li;
 }
+
 );
+
+
 const ul = document.querySelector("#ingredients");
 ul.append(...arr);
 console.log(ul);
