@@ -14,7 +14,7 @@ const images = [
 ];
 
 const takeUl = document.querySelector(".gallery");
-//takeUl.style.listStyle = "None";
+takeUl.style.listStyle = "None";
 
 const addLi = images.map(({url, alt}) => {
  return `<li class="gallery__item"><img class="gallery__img" width="350" height="180" src="${url}" alt="${alt}"></li>`; 
@@ -27,3 +27,5 @@ addLi.forEach((element) => {
 takeUl.style.display = "flex";
 takeUl.style.flexdirection = "row";
 takeUl.style.justifyContent = "space-between";
+takeUl.style.border = "10 px solid #fff";
+takeUl.style.borderradius = "10px";
