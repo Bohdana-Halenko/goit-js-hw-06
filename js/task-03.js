@@ -34,6 +34,9 @@ takeUl.insertAdjacentHTML("beforeEnd", addLi);
 
 
 takeUl.style.display = "flex";
-//takeUl.style.flexdirection = "row";
+takeUl.style.flexdirection = "row";
 takeUl.style.justifyContent = "centre";
+addLi.style.padding = "20px";
+addLi.style.maxWidth = "600px";
+addLi.style.height = "500px";
 
