@@ -36,6 +36,4 @@ addLi.forEach((element) => {
 takeUl.style.display = "flex";
 takeUl.style.flexdirection = "row";
 takeUl.style.justifyContent = "space-between";
-addLi.style.maxWidth = "600px";
-addLi.style.height = "500px";
 
