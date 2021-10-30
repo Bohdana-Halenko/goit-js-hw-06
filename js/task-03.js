@@ -26,13 +26,14 @@ const images = [
 
 
 const takeUl = document.querySelector("ul.gallery");
+takeUl.style.listStyle = "None";
 
 const addLi = images.map(({ url, alt }) => `<li><img class="image" src=${url} alt='${alt}'></li>`).join("");
 
 takeUl.insertAdjacentHTML("beforeEnd", addLi);
 
 
-//takeUl.style.display = "flex";
-//takeUl.style.flexdirection = "row";
-//takeUl.style.justifyContent = "space-between";
+takeUl.style.display = "flex";
+takeUl.style.flexdirection = "row";
+takeUl.style.justifyContent = "space-between";
 
