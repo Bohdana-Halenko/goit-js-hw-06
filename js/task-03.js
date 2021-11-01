@@ -13,27 +13,27 @@ const images = [
   },
 ];
 
-const takeUl = document.querySelector(".gallery");
+
+
+const takeUl = document.querySelector("ul.gallery");
 takeUl.style.listStyle = "None";
 
-const addLi = images.map(({url, alt}) => {
- return `<li class="gallery__item"><img class="gallery__img" width="350" height="180" src="${url}" alt="${alt}"></li>`; 
-});
+const addLi = images.map(({ url, alt }) => `<li class="gallery__item"><img class="gallery__img" width="350" height="180" src="${url}" alt="${alt}"></li>`).join("");
 
-addLi.forEach((element) => {
-  takeUl.insertAdjacentHTML("beforeEnd", element);
-});
+takeUl.insertAdjacentHTML("beforeEnd", addLi);
 
-
-//const takeUl = document.querySelector("ul.gallery");
+//const takeUl = document.querySelector(".gallery");
 //takeUl.style.listStyle = "None";
 
-//const addLi = images.map(({ url, alt }) => `<li><img class="image" src=${url} alt='${alt}'></li>`).join("");
+//const addLi = images.map(({url, alt}) => {
+ //return `<li class="gallery__item"><img class="gallery__img" width="350" height="180" src="${url}" alt="${alt}"></li>`; 
+//});
 
-//takeUl.insertAdjacentHTML("beforeEnd", addLi);
-
-
+//addLi.forEach((element) => {
+  //takeUl.insertAdjacentHTML("beforeEnd", element);
+//});
 takeUl.style.display = "flex";
 takeUl.style.flexdirection = "row";
 takeUl.style.justifyContent = "space-between";
+
 
